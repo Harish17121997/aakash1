@@ -1,0 +1,64 @@
+/* ===== RESET & BASE ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #111;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== COMMON LAYOUT ===== */
+.section {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 16px;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-images {
+    justify-content: center;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
