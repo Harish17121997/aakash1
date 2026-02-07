@@ -95,7 +95,6 @@
 /* CENTER HERO IMAGE */
 .img-2 {
   width: 320px;
-  top: 40px;
   left: 80%;
   transform: translateX(-50%);
   z-index: 3;

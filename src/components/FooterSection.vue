@@ -66,9 +66,9 @@
         </div>
 
         <div class="payments">
-          <img src="../assets/images/visa.png" />
-          <img src="../assets/images/mastercard.png" />
-          <img src="../assets/images/paypal.png" />
+          <img src="../assets/images/footer/footer1.png" />
+          <!-- <img src="../assets/images/mastercard.png" />
+          <img src="../assets/images/paypal.png" /> -->
         </div>
       </div>
 
