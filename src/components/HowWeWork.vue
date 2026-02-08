@@ -67,7 +67,7 @@ const steps = [
 <style scoped>
 .how-work {
   position: relative;
-  padding: 120px 20px;
+  padding: 25px 20px;
   background: radial-gradient(circle at top, #eef2ff, #f8faff);
   overflow: hidden;
 }
@@ -83,7 +83,7 @@ const steps = [
 /* PATH */
 .path {
   position: absolute;
-  top: 220px;
+  top: 122px;
   left: 0;
   width: 100%;
   height: 300px;

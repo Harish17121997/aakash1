@@ -2,13 +2,13 @@
   <section class="about">
 
     <!-- Floating images -->
-    <img class="float img-1" src="../assets/images/about/about1.png" />
-    <img class="float img-2" src="../assets/images/about/about2.png" />
-    <img class="float img-3" src="../assets/images/about/about3.png" />
+    <img class="float img-1" src="../assets/images/about/about.png" />
+    <img class="float img-2" src="../assets/images/about/about1.jpeg" />
+    <img class="float img-3" src="../assets/images/about/about1.png" />
 
     <div class="about-container">
 
-      <span class="label">ABOUT US</span>
+      <span class="label">Why Choose Pebble</span>
 
       <h3 class="headline">
         We Are A Creative Platform That Helps Brands Produce
