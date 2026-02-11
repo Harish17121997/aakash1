@@ -1,5 +1,5 @@
 <script setup>
-import hero1 from '@/assets/images/hero1.png'
+import hero1 from '@/assets/images/hero2.png'
 </script>
 
 <template>
@@ -11,52 +11,67 @@ import hero1 from '@/assets/images/hero1.png'
 </template>
 
 <style scoped>
-.hero {
-  background: #0b3cff;
-  color: white;
-  overflow: hidden;
+/* HERO SECTION */
+.hero{
+  position:relative;
+  width:100%;
+  height:calc(100vh - 78px); /* navbar height */
+  min-height:560px;
+  background:#0b3cff;
+  overflow:hidden;
 }
 
-.hero-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+/* IMAGE WRAPPER */
+.hero-images{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:flex;
 }
 
-.hero h1 {
-  font-size: 56px;
-  line-height: 1.1;
+/* DESKTOP IMAGE */
+.hero-images img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
 }
 
-.hero p {
-  max-width: 420px;
-  margin: 20px 0 30px;
+/* slight overlay (gives professional look) */
+.hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    180deg,
+    rgba(0,0,0,0.15) 0%,
+    rgba(0,0,0,0.35) 100%
+  );
+  pointer-events:none;
 }
 
-.primary-btn {
-  background: white;
-  color: #0b3cff;
-  border: none;
-  padding: 14px 28px;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-}
+/* ================= MOBILE FIX ================= */
+@media (max-width:768px){
 
-
-@media (max-width: 768px) {
-  .hero-inner {
-    flex-direction: column;
-    text-align: center;
+  .hero{
+    height:auto;
+    min-height:auto;
+    padding-top:0;
   }
 
-  .hero h1 {
-    font-size: 40px;
+  .hero-images{
+    position:relative;
+    height:auto;
   }
 
-  .hero-images {
-    justify-content: center;
+  .hero-images img{
+    width:100%;
+    height:auto;
+    object-fit:contain;        /* IMPORTANT */
+    object-position:top center;
   }
 }
+
 </style>
