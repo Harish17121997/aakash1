@@ -17,14 +17,15 @@
 </template>
 
 <script setup>
-import l1 from '../assets/images/brands/carosel1.png'
-import l2 from '../assets/images/brands/carosel2.png'
-import l3 from '../assets/images/brands/carosel3.png'
-import l4 from '../assets/images/brands/carosel4.png'
-import l5 from '../assets/images/brands/carosel5.png'
-import l6 from '../assets/images/brands/carosel6.png'
+import l1 from '../assets/images/brands/carosel1.PNG'
+import l2 from '../assets/images/brands/carosel2.PNG'
+import l3 from '../assets/images/brands/carosel3.PNG'
+import l4 from '../assets/images/brands/carosel4.PNG'
+import l5 from '../assets/images/brands/carosel5.PNG'
+import l6 from '../assets/images/brands/carosel6.JPG'
+import l7 from '../assets/images/brands/carosel7.png'
 
-const logos = [l1, l2, l3, l4, l5, l6]
+const logos = [l1, l2, l3, l4, l5, l6, l7]
 </script>
 
 <style scoped>
