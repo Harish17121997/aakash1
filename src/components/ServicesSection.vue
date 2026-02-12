@@ -75,8 +75,8 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-import service1 from '../assets/images/services/services1.png'
-import service2 from '../assets/images/services/services2.png'
+import service1 from '../assets/images/services/product01.png'
+import service2 from '../assets/images/services/realestate01.png'
 import service3 from '../assets/images/services/services3.png'
 
 /* ---------------- SERVICES ---------------- */
@@ -240,16 +240,32 @@ const playVideo = (id)=>{
   color:#a6ff00;
 }
 
+/* IMAGE AREA — LOCKED RATIO */
 .card-image{
-  height:140px;
+  position:relative;
+  width:100%;
+  height:240px;
+  border-radius:14px;
+  overflow:hidden;
+  margin-top:18px;
+  background:linear-gradient(145deg,#0f1117,#05060a);
   display:flex;
-  justify-content:flex-end;
-  align-items:flex-end;
+  align-items:center;
+  justify-content:center;
 }
 
 .card-image img{
-  max-width:100%;
-  object-fit:contain;
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;      /* important */
+  object-position:center;
+}
+
+hover animation
+.service-card:hover .card-image img{
+  transform:scale(1.08);
 }
 
 .arrow{
@@ -294,7 +310,7 @@ const playVideo = (id)=>{
 .category-content{
   width:100%;
   max-width:1200px;
-  background:linear-gradient(180deg,#374d8c,#06080f);
+  background:linear-gradient(180deg,#374d8c,#222b4d);
   border-radius:22px;
   padding:32px;
   max-height:90vh;
@@ -329,7 +345,7 @@ const playVideo = (id)=>{
 .category-content{
   width:100%;
   max-width:1200px;
-  background:linear-gradient(180deg,#5b75bd,#06080f);
+  background:linear-gradient(180deg,#5b75bd,#222b4d);
   border-radius:22px;
   padding:32px;
   max-height:90vh;
@@ -448,6 +464,7 @@ const playVideo = (id)=>{
   font-size:14px;
   font-weight:600;
   background:linear-gradient(transparent,rgba(0,0,0,.95));
+  color: wheat;
 }
 
 
