@@ -243,6 +243,7 @@
 
   .payments {
     justify-content: center;
+    margin-left: 47px;
   }
 }
 </style>
