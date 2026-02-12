@@ -80,12 +80,12 @@ import service3 from '../assets/images/services/services3.png'
 /* ---------------- SERVICES ---------------- */
 
 const allServices = [
-  { title:'PRODUCT ADS', slug:'product', desc:'High converting short-form product videos for brands', tag:'Short Form', img:service1 },
+  { title:'PRODUCT & AI ADS', slug:'product', desc:'High converting short-form product videos for brands', tag:'Short Form', img:service1 },
   { title:'REAL ESTATE ADS', slug:'realestate', desc:'Luxury & lifestyle real estate promotional videos', tag:'Lifestyle', img:service2 },
   { title:'TV COMMERCIALS', slug:'tvc', desc:'Professional brand commercials for mass audience', tag:'Broadcast', img:service3 },
   { title:'PERFORMANCE MARKETING ADS', slug:'performance', desc:'ROI driven paid ads campaigns', tag:'Paid Ads', img:service1 },
-  { title:'EVENT ADS', slug:'event', desc:'Event promotions and launch videos', tag:'Promotion', img:service2 },
-  { title:'AI ADS', slug:'ai', desc:'AI generated creatives & avatars', tag:'AI Creative', img:service3 }
+  { title:'EVENTS', slug:'event', desc:'Event promotions and launch videos', tag:'Promotion', img:service2 },
+  { title:'BRAND FILMS', slug:'ai', desc:'AI generated creatives & avatars', tag:'AI Creative', img:service3 }
 ]
 
 /* first 3 visible */
@@ -106,27 +106,39 @@ const videoDB = {
     {title:'Cosmetic Ad', id:'kBBgm1cRBqk'},
     {title:'Fitness', id:'0QGCXk5s1CY'},
     {title:'Fitness', id:'AVsb7tRmfXA'},
+     {title:'', id:'62sXxzPFK2w'},
+     {title:'', id:'GMWLZ7QEFFE'},
+     {title:'', id:'7Jj_opdM9sY'},
+     {title:'', id:'6g8tTqf8OhA'},
+     {title:'', id:'Dhy7RR1XESo'},
+     {title:'', id:'9kQnWWaLJg8'},
+     {title:'', id:'kUz68r4Df_w'},
+     {title:'', id:'MbMTn4RFxF8'},
+     {title:'', id:'LD2cAV-J3zw'},
   ],
   realestate:[
-    {title:'', id:'k9JhTISwU4Q'},
-    {title:'', id:'OIeGmQbNXcE'}, 
     {title:'', id:'B-MppfBEZus'}, 
-    {title:'', id:'5J7lG7C5o68'}, 
-    {title:'', id:'dxZZ59cm9fI'}, 
-    {title:'', id:'3k7ztBCR63k'},  
-    {title:'', id:'qAAqObAi9I4'},  
   ],
   tvc:[
+    {title:'', id:'5J7lG7C5o68'}, 
     {title:'Retail Brand TVC', id:'9EICU8E73_A'}
   ],
   performance:[
-    {title:'Meta Ads Campaign', id:'aegmFAWAcRk'}
+    {title:'Cosmetic Ad', id:'E-jGsAnt5wk'},
+    {title:'Fitness', id:'0QGCXk5s1CY'},
+    {title:'Fitness', id:'omqoEKZxrkA'},
+    {title:'Fitness', id:'eIAzAhcHuk8'},
+    // {title:'Fitness', id:'0QGCXk5s1CY'},
+    // {title:'Fitness', id:'0QGCXk5s1CY'},
   ],
   event:[
-    {title:'Wedding Highlight', id:'BdhCW0VFMMA'}
+    {title:'', id:'OIeGmQbNXcE'},
+    {title:'', id:'dxZZ59cm9fI'}, 
+    {title:'', id:'3k7ztBCR63k'},  
+    {title:'', id:'qAAqObAi9I4'},
   ],
   ai:[
-    {title:'AI Avatar Ad', id:'5y6R7LMUIQ0'}
+    {title:'', id:'k9JhTISwU4Q'},
   ]
 }
 

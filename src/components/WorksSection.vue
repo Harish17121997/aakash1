@@ -101,13 +101,13 @@ const works = [
     rank: 3,
     video: 'kBBgm1cRBqk'
   },
-  {
-    title: 'REAL ESTATE – VILLA PROMOTION',
-    image: work4,
-    rate: 68,
-    rank: 4,
-    video: 'Ra2R0MB0YUs'
-  }
+  // {
+  //   title: 'REAL ESTATE – VILLA PROMOTION',
+  //   image: work4,
+  //   rate: 68,
+  //   rank: 4,
+  //   video: 'Ra2R0MB0YUs'
+  // }
 ]
 </script>
 
