@@ -251,7 +251,7 @@ const goPricing = () => {
 
   .menu-btn{
     display:block;
-    padding-left: 80%;
+    padding-left: 90%;
   }
   
 }
