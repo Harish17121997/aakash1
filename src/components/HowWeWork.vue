@@ -169,6 +169,7 @@ const steps = [
   .card {
     width: 100%;
     transform: rotate(0);
+    margin-top: 0px;
   }
 
   .path {

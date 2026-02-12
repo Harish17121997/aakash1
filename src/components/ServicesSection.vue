@@ -65,10 +65,8 @@
             allowfullscreen>
           </iframe>
         </div>
-
       </div>
     </div>
-
   </section>
 </template>
 
@@ -105,16 +103,21 @@ const toggleServices = () => {
 
 const videoDB = {
   product:[
-    {title:'Cosmetic Ad', id:'k79Y6XWFHuI'},
-    {title:'Food Product Ad', id:'PJxoR2l-r-U'},
-    {title:'Bottle Ad', id:'iubdcB8BRuU'}
+    {title:'Cosmetic Ad', id:'kBBgm1cRBqk'},
+    {title:'Fitness', id:'0QGCXk5s1CY'},
+    {title:'Fitness', id:'AVsb7tRmfXA'},
   ],
   realestate:[
-    {title:'Luxury Villa Tour', id:'Ra2R0MB0YUs'},
-    {title:'Apartment Walkthrough', id:'jZmY9Ect2A4'}
+    {title:'', id:'k9JhTISwU4Q'},
+    {title:'', id:'OIeGmQbNXcE'}, 
+    {title:'', id:'B-MppfBEZus'}, 
+    {title:'', id:'5J7lG7C5o68'}, 
+    {title:'', id:'dxZZ59cm9fI'}, 
+    {title:'', id:'3k7ztBCR63k'},  
+    {title:'', id:'qAAqObAi9I4'},  
   ],
   tvc:[
-    {title:'Retail Brand TVC', id:'rCP983diVSc'}
+    {title:'Retail Brand TVC', id:'9EICU8E73_A'}
   ],
   performance:[
     {title:'Meta Ads Campaign', id:'aegmFAWAcRk'}
@@ -405,7 +408,7 @@ hover animation
 
 .hint{
   margin-bottom:18px;
-  color:#9ca3af;
+  color:#f7f7f7;
   font-size:14px;
 }
 
@@ -511,6 +514,9 @@ hover animation
 
   .modal-header h2{
     font-size:20px;
+  }
+  .services-header h1{
+    font-size: 28px;
   }
 
 }

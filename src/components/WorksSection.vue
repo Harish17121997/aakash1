@@ -57,9 +57,9 @@
 
 <script setup>
 import { ref } from 'vue'
-import work1 from '../assets/images/services/work1.png'
-import work2 from '../assets/images/services/work2.png'
-import work3 from '../assets/images/services/work3.jpg'
+import work1 from '../assets/images/services/ads3.PNG'
+import work2 from '../assets/images/services/ads4.PNG'
+import work3 from '../assets/images/services/ads5.PNG'
 import work4 from '../assets/images/services/work4.png'
 
 /* video modal state */
@@ -85,21 +85,21 @@ const works = [
     image: work1,
     rate: 60,
     rank: 1,
-    video: 'iubdcB8BRuU'
+    video: '0QGCXk5s1CY'
   },
   {
     title: 'REAL ESTATE – LUXURY APARTMENT',
     image: work2,
     rate: 74,
     rank: 2,
-    video: 'jZmY9Ect2A4'
+    video: 'B-MppfBEZus'
   },
   {
     title: 'PRODUCT AD – COSMETIC BRAND',
     image: work3,
     rate: 82,
     rank: 3,
-    video: 'l-UpsG80MZs'
+    video: 'kBBgm1cRBqk'
   },
   {
     title: 'REAL ESTATE – VILLA PROMOTION',
