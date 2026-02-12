@@ -121,4 +121,5 @@
     display: none; /* matches Figma mobile */
   }
 }
+
 </style>
