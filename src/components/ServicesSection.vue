@@ -75,10 +75,10 @@ import { ref, computed } from 'vue'
 
 import service1 from '../assets/images/services/product2.jpg'
 import service2 from '../assets/images/services/realestateads.JPG'
-import service3 from '../assets/images/services/brandsads1.PNG'
-import service4 from '../assets/images/services/performanceads.PNG'
+import service3 from '../assets/images/services/brandsads2.PNG'
+import service4 from '../assets/images/services/brandsads1.PNG'
 import service5 from '../assets/images/services/eventsads.PNG'
-import service6 from '../assets/images/services/brandsads2.PNG'
+import service6 from '../assets/images/services/performanceads.PNG'
 
 /* ---------------- SERVICES ---------------- */
 
