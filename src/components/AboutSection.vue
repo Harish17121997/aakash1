@@ -112,7 +112,7 @@
   width:340px;
   right:6%;
   top:220px;
-  transform:rotate(6deg);
+  /* transform:rotate(6deg); */
   z-index:3;
 }
 
@@ -135,9 +135,9 @@
   }
 
   .img-2{
-    width:300px;
+    width:400px;
     right:4%;
-    top:130px;
+    top:80%;
   }
 
   .img-3{
