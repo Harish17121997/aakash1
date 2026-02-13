@@ -2,9 +2,9 @@
   <section class="about">
 
     <!-- Floating images -->
-    <img class="float img-1" src="../assets/images/about/about.png" />
-    <img class="float img-2" src="../assets/images/about/about1.jpeg" />
-    <img class="float img-3" src="../assets/images/about/about1.png" />
+    <img class="float img-1" src="../assets/images/about/aboutads1.png" />
+    <img class="float img-2" src="../assets/images/about/aboutads2.png" />
+    <img class="float img-3" src="../assets/images/about/aboutads3.png" />
 
     <div class="about-container">
 
@@ -29,85 +29,128 @@
 </template>
 
 <style scoped>
-.about {
-  position: relative;
-  background: #000;
-  color: #fff;
-  padding: 180px 20px;
-  overflow: hidden;
+/* ================= SECTION ================= */
+.about{
+  position:relative;
+  background: radial-gradient(circle at center,#0b0b0b 0%,#000 70%);
+  color:#fff;
+  padding:150px 20px 130px;
+  overflow:hidden;
 }
 
-/* CONTAINER */
-.about-container {
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-  position: relative;
-  z-index: 5;
+/* subtle glow background */
+.about::before{
+  content:"";
+  position:absolute;
+  width:700px;
+  height:700px;
+  background:radial-gradient(circle,rgba(70,120,255,.25),transparent 60%);
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  filter:blur(90px);
+  z-index:0;
 }
 
-/* BIG LABEL */
-.label {
-  display: block;
-  font-size: 64px;
-  font-weight: 900;
-  letter-spacing: 4px;
-  opacity: 0.59;
-  margin-bottom: 60px;
+/* ================= CONTAINER ================= */
+.about-container{
+  max-width:820px;
+  margin:auto;
+  text-align:center;
+  position:relative;
+  z-index:5;
+}
+
+/* TITLE */
+.label{
+  display:block;
+  font-size:58px;
+  font-weight:800;
+  letter-spacing:1px;
+  margin-bottom:24px;
+  color:#e6e6e6;
 }
 
 /* HEADLINE */
-.headline {
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1.6;
-  margin-bottom: 28px;
-  max-width: 820px;
-  margin-left: auto;
-  margin-right: auto;
+.headline{
+  font-size:24px;
+  font-weight:600;
+  line-height:1.65;
+  margin-bottom:20px;
 }
 
 /* DESCRIPTION */
-.description {
-  font-size: 14px;
-  line-height: 1.9;
-  color: #cfcfcf;
-  max-width: 700px;
-  margin: auto;
+.description{
+  font-size:15px;
+  line-height:1.9;
+  color:#c9c9c9;
+  max-width:680px;
+  margin:auto;
 }
 
-/* FLOATING IMAGES */
-.float {
-  position: absolute;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.7);
-  z-index: 2;
+
+/* ================= FLOATING IMAGES ================= */
+.float{
+  position:absolute;
+  border-radius:22px;
+  object-fit:cover;
+  box-shadow:0 40px 100px rgba(0,0,0,.8);
+  z-index:2;
+  transition:transform .6s ease, box-shadow .4s ease;
 }
 
 /* LEFT TOP */
-.img-1 {
-  width: 180px;
-  top: 120px;
-  left: 100px;
+.img-1{
+  width:200px;
+  top:120px;
+  left:8%;
+  transform:rotate(-8deg);
 }
 
-/* CENTER HERO IMAGE */
-.img-2 {
-  width: 320px;
-  left: 80%;
-  transform: translateX(-50%);
-  z-index: 3;
+/* RIGHT SIDE MAIN IMAGE */
+.img-2{
+  width:340px;
+  right:6%;
+  top:220px;
+  transform:rotate(6deg);
+  z-index:3;
 }
 
 /* LEFT BOTTOM */
-.img-3 {
-  width: 220px;
-  bottom: 100px;
-  left: 140px;
+.img-3{
+  width:240px;
+  bottom:90px;
+  left:8%;
+  transform:rotate(-4deg);
 }
 
-/* RESPONSIVE */
+
+/* ================= LAPTOP ================= */
+@media (max-width:1366px){
+
+  .img-1{
+    width:200px;
+    left:4%;
+    top:130px;
+  }
+
+  .img-2{
+    width:300px;
+    right:4%;
+    top:130px;
+  }
+
+  .img-3{
+    width:200px;
+    left:8%;
+    bottom:80px;
+  }
+
+  .label{ font-size:46px; }
+  .headline{ font-size:21px; }
+}
+
+
 /* ================= TABLET ================= */
 @media (max-width:1024px){
 
@@ -115,41 +158,25 @@
     padding:120px 20px 90px;
   }
 
-  .label{
-    font-size:42px;
-    letter-spacing:2px;
-    margin-bottom:40px;
-  }
-
-  .headline{
-    font-size:19px;
-    line-height:1.7;
-  }
-
-  .description{
-    font-size:14px;
-  }
-
-  /* reduce floating image size instead of hiding */
-  .img-1{
-    width:130px;
-    left:30px;
-    top:60px;
+  /* make images decorative */
+  .float{
+    opacity:.35;
   }
 
   .img-2{
-    width:240px;
-    right:30px;
-    left:auto;
-    transform:none;
-    top:160px;
+    right:-40px;
+  }
+
+  .img-1{
+    left:-30px;
   }
 
   .img-3{
-    width:150px;
-    left:40px;
-    bottom:40px;
+    left:-10px;
   }
+
+  .label{ font-size:38px; }
+  .headline{ font-size:19px; }
 }
 
 
@@ -157,89 +184,55 @@
 @media (max-width:768px){
 
   .about{
-    padding:80px 18px 70px;
-  }
-
-  .about-container{
-    text-align:center;
-  }
-
-  /* Title */
-  .label{
-    font-size:26px;
-    letter-spacing:1px;
-    margin-bottom:22px;
-    opacity:.8;
-  }
-
-  .headline{
-    font-size:17px;
-    line-height:1.7;
-    margin-bottom:20px;
-  }
-
-  .description{
-    font-size:13.5px;
-    line-height:1.85;
-    color:#d4d4d4;
-  }
-
-  /* Turn floating images into a stacked gallery */
-  .float{
-    position:relative;
-    display:block;
-    margin:22px auto;
-    left:auto;
-    right:auto;
-    top:auto;
-    bottom:auto;
-    transform:none;
-    width:100%;
-    max-width:320px;
-    border-radius:14px;
-    box-shadow:0 18px 40px rgba(0,0,0,.55);
-  }
-
-  /* order of images */
-  .img-2{ order:1; }
-  .img-1{ order:2; }
-  .img-3{ order:3; }
-
-  /* container becomes flex column */
-  .about{
+    padding:70px 16px 60px;
     display:flex;
     flex-direction:column;
     align-items:center;
   }
 
+  /* important — removes desktop offsets */
+  .float{
+    position:static !important;
+    inset:auto !important;
+    top:auto !important;
+    left:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+
+    display:block;
+    width:92%;
+    max-width:300px;
+    margin:18px auto;
+
+    transform:none !important;
+    opacity:1;
+  }
+
   .about-container{
-    order:0;
+    order:1;
     margin-bottom:10px;
+    padding:0 6px;
   }
-}
 
-
-/* ================= SMALL PHONES ================= */
-@media (max-width:420px){
-
-  .about{
-    padding:70px 14px 60px;
-  }
+  /* order images like a story */
+  .img-1{ order:2; }
+  .img-2{ order:3; }
+  .img-3{ order:4; }
 
   .label{
-    font-size:22px;
+    font-size:26px;
+    line-height:1.2;
+    margin-bottom:14px;
   }
 
   .headline{
-    font-size:16px;
+    font-size:16.5px;
+    line-height:1.65;
   }
 
   .description{
-    font-size:13px;
-  }
-
-  .float{
-    max-width:280px;
+    font-size:13.5px;
+    line-height:1.85;
   }
 }
 
