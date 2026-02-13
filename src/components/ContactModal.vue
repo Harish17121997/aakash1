@@ -28,7 +28,7 @@
               v-model="form.brief"
               rows="4"
               required
-              placeholder="Describe your ad brief..."
+              placeholder="Briefly describe your requirements"
             ></textarea>
           </div>
 
@@ -105,7 +105,7 @@ const submitForm = () => {
   justify-content:center;
   padding:24px;
   z-index:2000;
-  font-family:'Inter',system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  /* font-family:'Inter',system-ui, -apple-system, Segoe UI, Roboto, sans-serif; */
 }
 
 /* ===== MODAL CARD ===== */
@@ -183,7 +183,7 @@ const submitForm = () => {
   border-radius:12px;
   padding:14px 14px;
   font-size:14px;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   font-weight:500;
   color:#111827;
   transition:all .2s ease;
