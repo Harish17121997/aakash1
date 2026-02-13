@@ -1,5 +1,5 @@
 <script setup>
-import hero1 from '@/assets/images/hero2.png'
+import hero1 from '@/assets/images/hero2.jpg'
 </script>
 
 <template>
@@ -15,9 +15,7 @@ import hero1 from '@/assets/images/hero2.png'
 .hero{
   position:relative;
   width:100%;
-  height:calc(100vh - 78px); /* navbar height */
-  min-height:560px;
-  background:#0b3cff;
+  height:clamp(520px, 92vh, 900px);
   overflow:hidden;
 }
 
@@ -37,20 +35,19 @@ import hero1 from '@/assets/images/hero2.png'
   object-fit:cover;
   object-position:center;
   display:block;
+  /* FIX washed colors */
+  filter: contrast(1.12) saturate(1.08) brightness(.95);
 }
+
 
 /* slight overlay (gives professional look) */
 .hero::after{
   content:'';
   position:absolute;
   inset:0;
-  background:linear-gradient(
-    180deg,
-    rgba(0,0,0,0.15) 0%,
-    rgba(0,0,0,0.35) 100%
-  );
   pointer-events:none;
 }
+
 
 /* ================= MOBILE FIX ================= */
 @media (max-width:768px){
