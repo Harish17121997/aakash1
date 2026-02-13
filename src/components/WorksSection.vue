@@ -34,7 +34,7 @@
 
               <div class="stat">
                 <span class="value">#{{ work.rank }}</span>
-                <span class="label">Rank</span>
+                <span class="label">Impression</span>
               </div>
             </div>
           </div>
