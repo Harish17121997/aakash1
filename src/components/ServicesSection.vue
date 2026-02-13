@@ -73,9 +73,12 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-import service1 from '../assets/images/services/product01.png'
-import service2 from '../assets/images/services/realestate01.png'
-import service3 from '../assets/images/services/services3.png'
+import service1 from '../assets/images/services/product2.jpg'
+import service2 from '../assets/images/services/realestateads.JPG'
+import service3 from '../assets/images/services/brandsads1.PNG'
+import service4 from '../assets/images/services/performanceads.PNG'
+import service5 from '../assets/images/services/eventsads.PNG'
+import service6 from '../assets/images/services/brandsads2.PNG'
 
 /* ---------------- SERVICES ---------------- */
 
@@ -83,9 +86,9 @@ const allServices = [
   { title:'PRODUCT & AI ADS', slug:'product', desc:'High converting short-form product videos for brands', tag:'Short Form', img:service1 },
   { title:'REAL ESTATE ADS', slug:'realestate', desc:'Luxury & lifestyle real estate promotional videos', tag:'Lifestyle', img:service2 },
   { title:'TV COMMERCIALS', slug:'tvc', desc:'Professional brand commercials for mass audience', tag:'Broadcast', img:service3 },
-  { title:'PERFORMANCE MARKETING ADS', slug:'performance', desc:'ROI driven paid ads campaigns', tag:'Paid Ads', img:service1 },
-  { title:'EVENTS', slug:'event', desc:'Event promotions and launch videos', tag:'Promotion', img:service2 },
-  { title:'BRAND FILMS', slug:'ai', desc:'AI generated creatives & avatars', tag:'AI Creative', img:service3 }
+  { title:'PERFORMANCE MARKETING ADS', slug:'performance', desc:'ROI driven paid ads campaigns', tag:'Paid Ads', img:service4 },
+  { title:'EVENTS', slug:'event', desc:'Event promotions and launch videos', tag:'Promotion', img:service5 },
+  { title:'BRAND FILMS', slug:'ai', desc:'AI generated creatives & avatars', tag:'AI Creative', img:service6 }
 ]
 
 /* first 3 visible */
@@ -120,7 +123,8 @@ const videoDB = {
     {title:'', id:'B-MppfBEZus'}, 
   ],
   tvc:[
-    {title:'', id:'5J7lG7C5o68'}, 
+    {title:'', id:'5J7lG7C5o68'},
+    {title:'', id:'cPk0lqoc0zQ'}, 
     {title:'Retail Brand TVC', id:'9EICU8E73_A'}
   ],
   performance:[
@@ -139,6 +143,7 @@ const videoDB = {
   ],
   ai:[
     {title:'', id:'k9JhTISwU4Q'},
+    {title:'', id:'nHvI2OjZy9c'},
   ]
 }
 
