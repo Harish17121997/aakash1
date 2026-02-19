@@ -81,33 +81,33 @@ const closeVideo = () => {
 /* works data */
 const works = [
   {
-    title: 'PRODUCT AD – SMART FITNESS BOTTLE',
+    title: 'BUILT FOR ATTENTION',
     image: work1,
     rate: 60,
     rank: 1,
     video: '0QGCXk5s1CY'
   },
   {
-    title: 'REAL ESTATE – LUXURY APARTMENT',
+    title: 'THE NO EXCUSES TAKEOVER',
     image: work2,
     rate: 74,
     rank: 2,
     video: 'B-MppfBEZus'
   },
   {
-    title: 'PRODUCT AD – COSMETIC BRAND',
+    title: 'SALE AT SCALE',
     image: work3,
     rate: 82,
     rank: 3,
-    video: 'kBBgm1cRBqk'
+    video: 'hTvY8i8kbV8'
   },
-  // {
-  //   title: 'REAL ESTATE – VILLA PROMOTION',
-  //   image: work4,
-  //   rate: 68,
-  //   rank: 4,
-  //   video: 'Ra2R0MB0YUs'
-  // }
+  {
+    title: 'OWN THE CITY',
+    image: work4,
+    rate: 68,
+    rank: 4,
+    video: 'eIAzAhcHuk8'
+  }
 ]
 </script>
 

@@ -42,8 +42,8 @@
         <a>Product Ads</a>
         <a>Real Estate Ads</a>
         <a>TV Commercials</a>
-        <a>UGC Videos</a>
-        <a>Influencer Marketing</a>
+        <!-- <a>UGC Videos</a> -->
+        <!-- <a>Influencer Marketing</a> -->
       </div>
 
       <!-- Others -->

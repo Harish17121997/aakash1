@@ -42,6 +42,15 @@
           <h2>{{ activeTitle }}</h2>
           <span class="close-btn" @click="closeModal">✕</span>
         </div>
+        <!-- player -->
+        <div v-if="playingVideo" class="player-wrapper">
+          <iframe
+            :src="`https://www.youtube.com/embed/${playingVideo}?autoplay=1&rel=0`"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+          </iframe>
+        </div>
         <p class="hint">Click any video to preview</p>
         <!-- video thumbnails -->
         <div class="video-list">
@@ -56,15 +65,7 @@
           </div>
         </div>
 
-        <!-- player -->
-        <div v-if="playingVideo" class="player-wrapper">
-          <iframe
-            :src="`https://www.youtube.com/embed/${playingVideo}?autoplay=1&rel=0`"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen>
-          </iframe>
-        </div>
+        
       </div>
     </div>
   </section>
@@ -92,7 +93,7 @@ const allServices = [
 ]
 
 /* first 3 visible */
-const showAll = ref(false)
+const showAll = ref(true)
 
 const displayedServices = computed(()=>{
   return showAll.value ? allServices : allServices.slice(0,3)

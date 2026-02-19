@@ -12,7 +12,7 @@
         <li @click="goServices">Services</li>
         <li @click="goUsecases">Use Cases</li>
         <li @click="goResources">Resources</li>
-        <li @click="goPricing">Pricing</li>
+        <li @click="goPricing">About</li>
       </ul>
 
       <!-- RIGHT : CTA + MOBILE -->
