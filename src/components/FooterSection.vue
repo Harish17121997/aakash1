@@ -21,8 +21,7 @@
       <div class="brand">
         <h4>PEBBLE</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod.
+          Pebble is a digital marketing platform for creative businesses.
         </p>
       </div>
 
