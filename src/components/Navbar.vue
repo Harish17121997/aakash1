@@ -32,9 +32,10 @@
 
     <!-- MOBILE OVERLAY MENU -->
     <transition name="menu">
-      <div v-if="isOpen" class="mobile-overlay">
+      <div v-if="isOpen" class="mobile-overlay" @click="closeMenu" >
 
-        <div class="mobile-menu">
+        <div class="mobile-menu"  @click.stop>
+          <button class="close-btn" @click="closeMenu">✕</button>
           <span @click="goServices">Services</span>
           <span @click="goUsecases">Use Cases</span>
           <span @click="goResources">Resources</span>
@@ -65,6 +66,9 @@ const toggleMenu = () => (isOpen.value = !isOpen.value)
 const goServices = () => {
   emit('go-services')
   isOpen.value = false   // close mobile menu also
+}
+const closeMenu = () => {
+  isOpen.value = false
 }
 
 const goUsecases = () => {
@@ -216,10 +220,12 @@ const goPricing = () => {
 
 /* SLIDE MENU PANEL */
 .mobile-menu{
+  position:relative; 
   width:260px;
   height:100%;
   background:#0039C8;
-  padding:40px 28px;
+  padding:60px 28px 40px;
+  /* padding:40px 28px; */
   display:flex;
   flex-direction:column;
   gap:26px;
@@ -229,6 +235,17 @@ const goPricing = () => {
 .mobile-menu span{
   color:white;
   font-size:18px;
+  cursor:pointer;
+}
+/* CLOSE BUTTON */
+.close-btn{
+  position:absolute;
+  top:20px;
+  right:20px;
+  background:none;
+  border:none;
+  font-size:24px;
+  color:white;
   cursor:pointer;
 }
 
