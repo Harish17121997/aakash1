@@ -33,34 +33,34 @@
 const steps = [
   {
     no: '01',
-    title: 'Share Your Brief',
-    desc: 'Tell us about your brand, product and the style of videos you need.'
+    title: 'Understand',
+    desc: "Before we create anything, we listen. We align on your brand, audience, objectives and the problem we are solving. This ensures every creative decision has purpose."
   },
   {
     no: '02',
-    title: 'Get Matched With Creators',
-    desc: 'We connect you with relevant UGC creators for your niche.'
+    title: 'Define',
+    desc: 'We translate insights into a clear creative direction. This includes visual style, tone, key messaging, and defined deliverables. Execution begins only after alignment.'
   },
   {
     no: '03',
-    title: 'Review & Select',
-    desc: 'Browse profiles, samples and select creators you love.'
+    title: 'Create',
+    desc: 'Ideas come to life through motion graphics, CGI, AI-driven visuals, and brand films. Execution is precise, detail-oriented, and aligned with the approved direction.'
   },
   {
     no: '04',
-    title: 'Creator Produces Content',
-    desc: 'Creators film authentic high-quality UGC based on your brief.'
+    title: 'Refine',
+    desc: 'We review, gather feedback, and fine-tune pacing, motion, and detail. Nothing leaves our studio until it feels fully resolved and confident.'
   },
   {
     no: '05',
-    title: 'Review & Revisions',
-    desc: 'Review videos and request changes if required.'
+    title: 'Deliver & Support',
+    desc: 'We provide final assets in the required formats and support implementation. Our goal is long-term value, not one-time execution.'
   },
   {
     no: '06',
-    title: 'Download & Use Anywhere',
-    desc: 'Use your UGC across ads, socials and campaigns.'
-  }
+    title: 'Optimize',
+    desc: 'We analyze performance data and audience feedback to continuously optimize and evolve the creative for maximum impact.'
+  },
 ]
 </script>
 

@@ -43,13 +43,16 @@
           <span class="close-btn" @click="closeModal">✕</span>
         </div>
         <!-- player -->
-        <div v-if="playingVideo" class="player-wrapper">
-          <iframe
-            :src="`https://www.youtube.com/embed/${playingVideo}?autoplay=1&rel=0`"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen>
-          </iframe>
+        <div v-if="playingVideo" class="video-overlay" @click="playingVideo = null">
+          <div class="video-center" @click.stop>
+            <iframe
+              :src="`https://www.youtube.com/embed/${playingVideo}?autoplay=1&rel=0`"
+              allow="autoplay; encrypted-media"
+              allowfullscreen>
+            </iframe>
+
+            <span class="close-video" @click="playingVideo = null">✕</span>
+          </div>
         </div>
         <p class="hint">Click any video to preview</p>
         <!-- video thumbnails -->
@@ -486,6 +489,59 @@ hover animation
   font-weight:600;
   background:linear-gradient(transparent,rgba(0,0,0,.95));
   color: wheat;
+}
+
+/* ===============================
+   CENTER VIDEO OVERLAY
+================================ */
+
+.video-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.75);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:10000;
+  animation:fadeIn .2s ease;
+}
+
+.video-center{
+  width:90%;
+  max-width:1000px;
+  aspect-ratio:16/9;
+  background:#000;
+  border-radius:18px;
+  overflow:hidden;
+  position:relative;
+  box-shadow:0 40px 100px rgba(0,0,0,.8);
+  animation:zoomIn .25s ease;
+}
+
+@keyframes zoomIn{
+  from{transform:scale(.9);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+
+.video-center iframe{
+  width:100%;
+  height:100%;
+  border:none;
+}
+
+.close-video{
+  position:absolute;
+  top:15px;
+  right:15px;
+  background:#fff;
+  color:#000;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-weight:bold;
+  cursor:pointer;
 }
 
 

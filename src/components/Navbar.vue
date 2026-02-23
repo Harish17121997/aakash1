@@ -17,7 +17,7 @@
 
       <!-- RIGHT : CTA + MOBILE -->
       <div class="nav-right">
-        <button class="cta-btn" @click="$emit('open-contact')">Get in Touch</button>
+        <button class="cta-btn" @click="openWhatsApp">Get in Touch</button>
 
         <button
           class="menu-btn"
@@ -38,9 +38,9 @@
           <span @click="goServices">Services</span>
           <span @click="goUsecases">Use Cases</span>
           <span @click="goResources">Resources</span>
-          <span @click="goPricing">Pricing</span>
+          <span @click="goPricing">About</span>
 
-          <button class="mobile-cta" @click="$emit('open-contact')">Get in Touch</button>
+          <button class="mobile-cta" @click="openWhatsApp">Get in Touch</button>
         </div>
 
 
@@ -70,6 +70,17 @@ const goServices = () => {
 const goUsecases = () => {
   emit('go-usecases')
   isOpen.value = false
+}
+const openWhatsApp = () => {
+  const phoneNumber = "9518734448"
+  const message = `
+    Hello Pebble Media Team,
+    I'm interested in creating an ads campaign.
+    Please share more details.
+  `
+  const encodedMessage = encodeURIComponent(message)
+  const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+  window.open(url, "_blank")
 }
 
 const goResources = () => {
